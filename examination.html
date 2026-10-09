@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Examinations | KTU Student Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">K</span>
+
+            <div>
+                <h2>KTU Portal</h2>
+                <p>Student Dashboard</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="examination.html" class="active">Examination</a>
+            <a href="results.html">Results</a>
+        </nav>
+
+        <a href="#exam-list" class="nav-button">Explore Exams</a>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="exam-page">
+
+        <!-- Hero Section -->
+        <section class="exam-hero">
+
+            <div>
+                <p class="eyebrow">STUDENT ACADEMIC SERVICES</p>
+
+                <h1>Examination Centre</h1>
+
+                <p>
+                    Find examination information, explore timetables,
+                    and stay informed about important academic updates.
+                </p>
+            </div>
+
+            <div class="hero-symbol">📚</div>
+
+        </section>
+
+
+        <!-- Summary Cards -->
+        <section class="exam-summary">
+
+            <article class="summary-card">
+                <span class="summary-icon">📅</span>
+                <p>Semester Categories</p>
+                <h2>04</h2>
+                <small>Sample demonstration</small>
+            </article>
+
+            <article class="summary-card">
+                <span class="summary-icon">📋</span>
+                <p>Exam Information</p>
+                <h2>04</h2>
+                <small>Sample entries</small>
+            </article>
+
+            <article class="summary-card">
+                <span class="summary-icon">🔔</span>
+                <p>Student Updates</p>
+                <h2>03</h2>
+                <small>Information panel items</small>
+            </article>
+
+        </section>
+
+
+        <!-- Examination List and Updates -->
+        <section class="exam-layout" id="exam-list">
+
+            <div class="exam-main">
+
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">STAY PREPARED</p>
+                        <h2>Find Your Examination</h2>
+                    </div>
+                </div>
+
+
+                <!-- Search and Filter -->
+                <div class="exam-filters">
+
+                    <input
+                        type="search"
+                        id="examSearch"
+                        placeholder="Search by semester or examination..."
+                        aria-label="Search examinations"
+                    >
+
+                    <select
+                        id="semesterFilter"
+                        aria-label="Filter by semester"
+                    >
+                        <option value="all">All Semesters</option>
+                        <option value="S2">Semester 2</option>
+                        <option value="S4">Semester 4</option>
+                        <option value="S6">Semester 6</option>
+                        <option value="S8">Semester 8</option>
+                    </select>
+
+                </div>
+
+
+                <!-- Semester 2 -->
+                <article class="exam-card" data-semester="S2">
+
+                    <div class="semester-badge">S2</div>
+
+                    <div class="exam-details">
+
+                        <span class="exam-type">SEMESTER EXAMINATION</span>
+
+                        <h3>Second Semester Examination</h3>
+
+                        <p>
+                            Find examination information and check
+                            the official timetable when available.
+                        </p>
+
+                        <div class="exam-meta">
+                            <span>📅 Date: Refer to official notice</span>
+                            <span class="status upcoming">Check Schedule</span>
+                        </div>
+
+                        <div class="exam-actions">
+                            <button
+                                class="primary-button"
+                                onclick="showExamMessage('Semester 2 timetable')"
+                            >
+                                View Timetable
+                            </button>
+
+                            <button
+                                class="secondary-button"
+                                onclick="showExamMessage('Semester 2 details')"
+                            >
+                                View Details
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Semester 4 -->
+                <article class="exam-card" data-semester="S4">
+
+                    <div class="semester-badge">S4</div>
+
+                    <div class="exam-details">
+
+                        <span class="exam-type">SEMESTER EXAMINATION</span>
+
+                        <h3>Fourth Semester Examination</h3>
+
+                        <p>
+                            Explore examination information and
+                            relevant academic announcements.
+                        </p>
+
+                        <div class="exam-meta">
+                            <span>📅 Date: Refer to official notice</span>
+                            <span class="status upcoming">Check Schedule</span>
+                        </div>
+
+                        <div class="exam-actions">
+                            <button
+                                class="primary-button"
+                                onclick="showExamMessage('Semester 4 timetable')"
+                            >
+                                View Timetable
+                            </button>
+
+                            <button
+                                class="secondary-button"
+                                onclick="showExamMessage('Semester 4 details')"
+                            >
+                                View Details
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Semester 6 -->
+                <article class="exam-card" data-semester="S6">
+
+                    <div class="semester-badge">S6</div>
+
+                    <div class="exam-details">
+
+                        <span class="exam-type">SEMESTER EXAMINATION</span>
+
+                        <h3>Sixth Semester Examination</h3>
+
+                        <p>
+                            Find relevant examination information
+                            and check official schedule announcements.
+                        </p>
+
+                        <div class="exam-meta">
+                            <span>📅 Date: Refer to official notice</span>
+                            <span class="status upcoming">Check Schedule</span>
+                        </div>
+
+                        <div class="exam-actions">
+                            <button
+                                class="primary-button"
+                                onclick="showExamMessage('Semester 6 timetable')"
+                            >
+                                View Timetable
+                            </button>
+
+                            <button
+                                class="secondary-button"
+                                onclick="showExamMessage('Semester 6 details')"
+                            >
+                                View Details
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Semester 8 -->
+                <article class="exam-card" data-semester="S8">
+
+                    <div class="semester-badge">S8</div>
+
+                    <div class="exam-details">
+
+                        <span class="exam-type">SEMESTER EXAMINATION</span>
+
+                        <h3>Eighth Semester Examination</h3>
+
+                        <p>
+                            Explore examination details and
+                            important academic information.
+                        </p>
+
+                        <div class="exam-meta">
+                            <span>📅 Date: Refer to official notice</span>
+                            <span class="status upcoming">Check Schedule</span>
+                        </div>
+
+                        <div class="exam-actions">
+                            <button
+                                class="primary-button"
+                                onclick="showExamMessage('Semester 8 timetable')"
+                            >
+                                View Timetable
+                            </button>
+
+                            <button
+                                class="secondary-button"
+                                onclick="showExamMessage('Semester 8 details')"
+                            >
+                                View Details
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- No Results Message -->
+                <p id="noExams" class="empty-message" hidden>
+                    No matching examinations found. Try another search
+                    or select a different semester.
+                </p>
+
+            </div>
+
+
+            <!-- Important Updates -->
+            <aside class="updates-panel">
+
+                <p class="eyebrow">STAY INFORMED</p>
+
+                <h2>Important Updates</h2>
+
+                <article class="update-item">
+                    <span class="update-dot"></span>
+
+                    <div>
+                        <h3>Examination Timetable</h3>
+                        <p>
+                            Check the official KTU website for published
+                            examination timetables.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="update-item">
+                    <span class="update-dot"></span>
+
+                    <div>
+                        <h3>Exam Registration</h3>
+                        <p>
+                            Verify registration dates and eligibility
+                            requirements using official notices.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="update-item">
+                    <span class="update-dot"></span>
+
+                    <div>
+                        <h3>Exam Preparation</h3>
+                        <p>
+                            Review your official timetable and
+                            examination instructions before your exam.
+                        </p>
+                    </div>
+                </article>
+
+                <a
+                    href="https://ktu.edu.in/"
+                    class="official-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Visit Official KTU Website ↗
+                </a>
+
+                <p class="demo-note">
+                    This is a student redesign prototype. Examination
+                    dates and notifications must be verified through
+                    official KTU sources.
+                </p>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>KTU Student Portal Redesign</p>
+
+        <p>Making academic information easier to find.</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

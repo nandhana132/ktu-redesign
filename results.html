@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results | KTU Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="index.html" class="logo">KTU<span>Connect</span></a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="examination.html">Examination</a>
+            <a href="results.html" class="active">Results</a>
+        </nav>
+    </header>
+
+    <main class="results-page">
+
+        <!-- Page Heading -->
+        <section class="results-hero">
+            <p class="eyebrow">STUDENT ACADEMICS</p>
+            <h1>Your results, made simple.</h1>
+            <p>
+                View your semester performance, subject grades,
+                and academic progress in one place.
+            </p>
+            <span class="demo-label">DEMO DATA — NOT OFFICIAL RESULTS</span>
+        </section>
+
+        <!-- Student Summary -->
+        <section class="results-summary">
+            <article class="summary-card">
+                <p>Student Name</p>
+                <h3>Sample Student</h3>
+            </article>
+
+            <article class="summary-card">
+                <p>Programme</p>
+                <h3>B.Tech</h3>
+            </article>
+
+            <article class="summary-card">
+                <p>Current Semester</p>
+                <h3>Semester 4</h3>
+            </article>
+        </section>
+
+        <!-- Results Table -->
+        <section class="results-content">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">ACADEMIC RECORD</p>
+                    <h2>Semester Results</h2>
+                </div>
+            </div>
+
+            <div class="result-filter">
+                <label for="resultSemester">Choose semester:</label>
+
+                <select id="resultSemester">
+                    <option value="4">Semester 4</option>
+                    <option value="2">Semester 2</option>
+                    <option value="6">Semester 6</option>
+                    <option value="8">Semester 8</option>
+                </select>
+            </div>
+
+            <div class="table-wrapper">
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>Course Code</th>
+                            <th>Subject</th>
+                            <th>Credits</th>
+                            <th>Grade</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="resultTableBody">
+                        <tr>
+                            <td>EST200</td>
+                            <td>Design and Engineering</td>
+                            <td>3</td>
+                            <td><span class="grade">A</span></td>
+                            <td><span class="status-pass">Passed</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>MAT202</td>
+                            <td>Probability and Statistics</td>
+                            <td>4</td>
+                            <td><span class="grade">B+</span></td>
+                            <td><span class="status-pass">Passed</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>EST202</td>
+                            <td>Digital Electronics</td>
+                            <td>4</td>
+                            <td><span class="grade">A</span></td>
+                            <td><span class="status-pass">Passed</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>HUT200</td>
+                            <td>Professional Ethics</td>
+                            <td>2</td>
+                            <td><span class="grade">B</span></td>
+                            <td><span class="status-pass">Passed</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- SGPA Summary -->
+            <div class="sgpa-card">
+                <div>
+                    <p>Semester Grade Point Average</p>
+                    <h2 id="sgpaValue">8.25 <span>/ 10</span></h2>
+                </div>
+
+                <p class="sgpa-note">
+                    Sample SGPA for demonstration only.
+                </p>
+            </div>
+        </section>
+
+        <!-- Helpful Information -->
+        <section class="result-notice">
+            <h2>Need your official result?</h2>
+            <p>
+                This redesigned page uses sample information.
+                Visit the official KTU website to check your actual
+                examination results.
+            </p>
+
+            <a
+                href="https://ktu.edu.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="primary-button"
+            >
+                Visit Official KTU Website
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>KTU Connect — A student-focused website redesign concept.</p>
+        <p>Demo project. Not an official KTU website.</p>
+    </footer>
+
+</body>
+</html>
