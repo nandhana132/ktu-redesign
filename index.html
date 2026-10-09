@@ -4,210 +4,223 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>KTU Student Portal</title>
+    <title>APJ Abdul Kalam Technological University</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- Header -->
     <header class="navbar">
-        <div class="logo">
-            <span class="logo-icon">K</span>
-            <div>
-                <h2>KTU Portal</h2>
-                <p>Student Dashboard</p>
-            </div>
-        </div>
+        <a href="index.html" class="logo">
+            <span class="ktu-emblem">KTU</span>
+            <span class="university-name">
+                APJ Abdul Kalam<br>
+                Technological University
+            </span>
+        </a>
 
         <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="examination.html">Examination</a>
-            <a href="results.html">Results</a>
+            <a href="index.html" class="active">⌂ Home</a>
+            <a href="examination.html">▤ Examination</a>
+            <a href="results.html">▥ Results</a>
+            <a href="#notifications">♧ Notifications</a>
         </nav>
 
-        <a href="#quick-links" class="nav-button">Quick Access</a>
+        <a href="#quick-access" class="header-profile">Student Portal</a>
     </header>
 
-
-    <!-- Main Hero Section -->
     <main>
 
-        <section class="hero">
+        <!-- Hero Section -->
+        <section class="ktu-hero">
+
             <div class="hero-content">
-                <p class="eyebrow">YOUR ACADEMIC JOURNEY, SIMPLIFIED</p>
+                <p class="eyebrow">APJ ABDUL KALAM TECHNOLOGICAL UNIVERSITY</p>
 
-                <h1>
-                    Everything you need<br>
-                    for your <span>KTU journey.</span>
-                </h1>
+                <h1>Welcome to KTU</h1>
 
-                <p class="hero-description">
-                    Find examination updates, access academic resources,
-                    and check your results in one simple student-friendly portal.
+                <h2>Your journey towards a better future starts here.</h2>
+
+                <p>
+                    Access examination schedules, academic results,
+                    notifications, and essential university information
+                    through one convenient portal.
                 </p>
 
-                <div class="hero-buttons">
-                    <a href="examination.html" class="primary-button">
-                        Explore Examinations →
-                    </a>
-
-                    <a href="results.html" class="secondary-button">
-                        Check Results
-                    </a>
-                </div>
+                <a href="#quick-access" class="primary-button">
+                    Explore Student Services →
+                </a>
             </div>
 
-            <div class="hero-card">
-                <div class="hero-card-top">
-                    <span>STUDENT OVERVIEW</span>
-                    <span class="status-dot"></span>
-                </div>
-
-                <h2>Your academic hub</h2>
-
-                <div class="overview-item">
-                    <div class="overview-icon">📅</div>
-                    <div>
-                        <h3>Examinations</h3>
-                        <p>Timetables and exam updates</p>
-                    </div>
-                    <a href="examination.html">→</a>
-                </div>
-
-                <div class="overview-item">
-                    <div class="overview-icon">📊</div>
-                    <div>
-                        <h3>Academic Results</h3>
-                        <p>Marks, grades and performance</p>
-                    </div>
-                    <a href="results.html">→</a>
-                </div>
-
-                <div class="overview-item">
-                    <div class="overview-icon">🔔</div>
-                    <div>
-                        <h3>Latest Updates</h3>
-                        <p>Important student information</p>
-                    </div>
-                    <a href="#announcements">→</a>
-                </div>
+            <div class="hero-illustration">
+                <div class="illustration-icon">🎓</div>
+                <h3>Learn. Achieve. Excel.</h3>
+                <p>Your academic journey, organized.</p>
             </div>
+
         </section>
 
+        <!-- Search -->
+        <section class="portal-search">
+            <form id="portalSearchForm">
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="search"
+                    id="portalSearch"
+                    placeholder="Search examinations, results, notifications..."
+                    aria-label="Search portal"
+                >
+
+                <button type="submit">Search</button>
+            </form>
+
+            <p id="portalSearchMessage" aria-live="polite"></p>
+        </section>
 
         <!-- Quick Access -->
-        <section class="section" id="quick-links">
+        <section class="section" id="quick-access">
 
             <div class="section-heading">
                 <div>
-                    <p class="eyebrow">QUICK ACCESS</p>
-                    <h2>Where do you want to go?</h2>
+                    <p class="eyebrow">STUDENT SERVICES</p>
+                    <h2>Quick Access</h2>
+                    <p>Everything you need, just one click away.</p>
                 </div>
-
-                <p>Reach important academic services faster.</p>
             </div>
 
             <div class="quick-grid">
 
-                <a href="examination.html" class="quick-card">
-                    <div class="card-icon">📅</div>
-                    <h3>Examinations</h3>
-                    <p>Find exam schedules, timetables and notifications.</p>
-                    <span>View examinations →</span>
-                </a>
+                <article class="quick-card exam-quick">
+                    <div class="quick-icon">▤</div>
+                    <h3>Examination</h3>
+                    <p>View examination schedules, dates, and updates.</p>
+                    <a href="examination.html">View Examinations →</a>
+                </article>
 
-                <a href="results.html" class="quick-card">
-                    <div class="card-icon">📈</div>
+                <article class="quick-card result-quick">
+                    <div class="quick-icon">▥</div>
                     <h3>Results</h3>
-                    <p>Explore marks, grades and semester performance.</p>
-                    <span>View results →</span>
-                </a>
+                    <p>Explore sample marks, grades, and academic progress.</p>
+                    <a href="results.html">View Results →</a>
+                </article>
 
-                <a href="#announcements" class="quick-card">
-                    <div class="card-icon">🔔</div>
-                    <h3>Announcements</h3>
-                    <p>Stay informed about important academic updates.</p>
-                    <span>Read updates →</span>
-                </a>
+                <article class="quick-card notification-quick">
+                    <div class="quick-icon">♧</div>
+                    <h3>Notifications</h3>
+                    <p>Find important academic announcements and updates.</p>
+                    <a href="#notifications">View Updates →</a>
+                </article>
+
+                <article class="quick-card academic-quick">
+                    <div class="quick-icon">▣</div>
+                    <h3>Academic Information</h3>
+                    <p>Find academic resources and useful university links.</p>
+                    <a href="#academic-info">Explore Information →</a>
+                </article>
 
             </div>
         </section>
 
-
-        <!-- Announcements -->
-        <section class="section announcements" id="announcements">
+        <!-- Important Updates -->
+        <section class="section updates-section" id="notifications">
 
             <div class="section-heading">
                 <div>
-                    <p class="eyebrow">STAY INFORMED</p>
-                    <h2>Announcements</h2>
+                    <p class="eyebrow">LATEST INFORMATION</p>
+                    <h2>Important Updates</h2>
+                    <p>Stay informed about academic activities.</p>
                 </div>
-
-                <span class="demo-label">DEMO CONTENT</span>
             </div>
 
-            <div class="announcement-list">
+            <div class="announcements">
 
                 <article class="announcement">
-                    <div class="announcement-icon">📢</div>
+                    <span class="notice-label">Notice</span>
 
-                    <div class="announcement-content">
-                        <span class="announcement-category">EXAMINATION</span>
-                        <h3>Check the latest examination notifications</h3>
+                    <div>
+                        <h3>Examination Schedule</h3>
                         <p>
-                            Visit the Examination section to explore
-                            available examination information.
+                            Check the examination page for sample
+                            schedules and examination information.
                         </p>
                     </div>
 
-                    <a href="examination.html" class="announcement-link">
-                        Explore →
-                    </a>
+                    <a href="examination.html">View →</a>
                 </article>
 
                 <article class="announcement">
-                    <div class="announcement-icon">📋</div>
+                    <span class="notice-label info-label">Info</span>
 
-                    <div class="announcement-content">
-                        <span class="announcement-category">RESULTS</span>
-                        <h3>Access your academic results</h3>
+                    <div>
+                        <h3>Examination Results</h3>
                         <p>
-                            Open the Results section to view the sample
-                            student result dashboard.
+                            Explore the redesigned results dashboard
+                            using demonstration data.
                         </p>
                     </div>
 
-                    <a href="results.html" class="announcement-link">
-                        Explore →
+                    <a href="results.html">View →</a>
+                </article>
+
+                <article class="announcement">
+                    <span class="notice-label warning-label">Update</span>
+
+                    <div>
+                        <h3>University Announcements</h3>
+                        <p>
+                            Visit the official university website
+                            for verified announcements.
+                        </p>
+                    </div>
+
+                    <a
+                        href="https://ktu.edu.in/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Official Website →
                     </a>
                 </article>
 
             </div>
+        </section>
 
-            <p class="demo-note">
-                Note: This is a student project redesign. The announcements
-                shown here are demonstration content, not official KTU notices.
+        <!-- Academic Information -->
+        <section class="section academic-info" id="academic-info">
+            <p class="eyebrow">ABOUT THE UNIVERSITY</p>
+            <h2>Academic Information</h2>
+
+            <p>
+                This redesigned interface demonstrates how university
+                information can be organized into clear sections,
+                making student services easier to navigate.
             </p>
 
+            <a
+                href="https://ktu.edu.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="primary-button"
+            >
+                Visit Official KTU Website
+            </a>
         </section>
 
     </main>
 
-
     <!-- Footer -->
     <footer class="footer">
-        <div>
-            <h3>KTU Student Portal</h3>
-            <p>A student-friendly academic information experience.</p>
-        </div>
-
-        <p>Redesign and Rebuild Challenge · Student Project</p>
+        <h3>APJ Abdul Kalam Technological University</h3>
+        <p>Redesigned student portal interface concept.</p>
+        <p>
+            This is an independent redesign project, not the official
+            university portal. Sample information is for demonstration.
+        </p>
     </footer>
-
-
-    <script src="script.js"></script>
 
 </body>
 </html>
