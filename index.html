@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KTU Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">KTU<span>Connect</span></div>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="examination.html">Examination</a>
+            <a href="results.html">Results</a>
+        </nav>
+
+        <button class="login-btn" onclick="showMessage()">
+            Student Login
+        </button>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="welcome">YOUR ACADEMIC COMPANION</p>
+
+            <h1>Your KTU Journey,<br>
+                <span>Simplified.</span>
+            </h1>
+
+            <p class="hero-description">
+                Find examination updates, check results and
+                access important academic information in one place.
+            </p>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search exams, results or notifications..."
+                >
+
+                <button onclick="searchWebsite()">Search</button>
+            </div>
+
+            <p id="searchMessage" class="search-message"></p>
+        </div>
+    </section>
+
+    <!-- Quick Access -->
+    <section class="section">
+        <div class="section-heading">
+            <p class="small-title">QUICK ACCESS</p>
+            <h2>Everything you need</h2>
+            <p>Reach important student services with one click.</p>
+        </div>
+
+        <div class="quick-grid">
+
+            <a href="examination.html" class="quick-card">
+                <div class="card-icon">📅</div>
+                <h3>Examinations</h3>
+                <p>Find examination information and timetables.</p>
+                <span>Explore exams →</span>
+            </a>
+
+            <a href="results.html" class="quick-card">
+                <div class="card-icon">📊</div>
+                <h3>Results</h3>
+                <p>View sample marks, grades and SGPA.</p>
+                <span>Check results →</span>
+            </a>
+
+            <a href="#announcements" class="quick-card">
+                <div class="card-icon">🔔</div>
+                <h3>Notifications</h3>
+                <p>Read important academic announcements.</p>
+                <span>View updates →</span>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Announcements -->
+    <section class="section announcements" id="announcements">
+        <div class="section-heading">
+            <p class="small-title">STAY INFORMED</p>
+            <h2>Latest Announcements</h2>
+            <p>Sample updates for this website redesign.</p>
+        </div>
+
+        <div class="announcement-list">
+
+            <div class="announcement">
+                <div class="announcement-icon">📢</div>
+                <div>
+                    <h3>Examination Updates</h3>
+                    <p>
+                        Check the Examination page for sample timetable
+                        and examination information.
+                    </p>
+                </div>
+                <a href="examination.html">View →</a>
+            </div>
+
+            <div class="announcement">
+                <div class="announcement-icon">📘</div>
+                <div>
+                    <h3>Results Information</h3>
+                    <p>
+                        Visit the Results page to explore the sample
+                        student result dashboard.
+                    </p>
+                </div>
+                <a href="results.html">View →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>KTU Connect</h3>
+        <p>A student-friendly website redesign concept.</p>
+        <p>Unofficial prototype · Sample information only</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
